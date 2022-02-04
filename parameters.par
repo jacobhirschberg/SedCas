@@ -1,0 +1,72 @@
+SedCas Parameters
+
+n_HRU: 	 		2
+HRUs: 	 		['forest', 'bedrock']
+Vwcaps: 		[[72,27], [4]]
+ks: 	 		[[94, 235], [23]]
+shares: 	 	[0.56, 0.44]
+Asnow:			[0.4, 0.65]
+Anosnow:		[0.15, 0.25]
+Ele: 	 		1600
+area: 	 		4.83
+Tsa: 	 		0.6
+Tsm: 	 		0.5
+mrate: 	 		0.08
+alphaET: 	 	20.0
+LStrig:			'thermal'
+Tpr:			7.9
+Tsd: 	 		20.0
+Tfreeze:		0
+qdf: 	 		2.40
+smax: 	 		0.57
+smax_nodf: 	 	0.4
+a: 	 			auto
+b: 	 			1.5
+Qmin_nondf: 	auto
+rhc: 	 		0.12
+minDF: 	 		2000
+rho_b:   		2600
+rho_dry: 		2000
+rho_bulk:   	2000
+shcap:			750000
+ls_xmin:		233
+ls_alpha:		1.69
+ls_cutoff:		3*10**6
+M: 				100
+
+
+Description
+-----------
+n_HRU 	>>>	 Number of hydrological response units (HRU) [-]
+HRUs 	>>>	 Description of hydrological response units
+Vwcaps 	>>>	 Water storage capacities of HRUs
+ks 	>>>	 Residence time parameters for HRUs
+shares 	>>>	 Relative share of HRUs to total area
+Asnow 	>>>  Albedos for HRUs when covered with snow
+Anosnow 	>>>  Albedos for HRUs when not covered with snow
+Ele 	>>>	 (Mean) catchment elevation [m a.s.l.]
+area 	>>>	 Total catchment area [km2]
+Tsa 	>>>	 Temperature threshold for snow accumulation [degreeC]
+Tsm 	>>>	 Temperature threshold for snow melt [degreeC]
+m 	>>>	 Melt rate factor [-]
+alphaET		>>>	 Evaptranspiration parameter [-]
+LStrig 	>>>  Landslide triggering mechanism e['thermal', 'rainfall', 'random']
+Tpr		>>>  Precipitation threshold for rainfall-landslides to be triggered [mm]
+Tsd 	>>>	 Snow-depth threhsold for landslides to be triggered [mm SWE]
+Tfreeze 	>>>  Temperature threshold for landslide triggered by freezing [degreeC]
+qdf 	>>>	 Critical discharge for debris flows to be triggered [mm]
+smax 	>>>	 max volumetric ratio of sediment to water [mm/mm], typically <= 0.8
+smax_nodf 	>>>	 max possible volumetric sediment concentration for bedload transport (for sub-critical flows) [mm/mm], typically <= 0.4 
+a 	>>>	 Scaling parameter for bedload transport in sub-critical flow conditions, determined automatically
+b 	>>>	 Shape parameter for bedload transport in sub-critical flow conditions, typically =1.5
+Qmin_nodf 	>>>	 min discharge for bedload transport initiation, determined automatically
+rhc 	>>>	 Deposition rate from hillslope to channel, i.e. fraction of landslide going into hillslope storage and 1-rhc is the fraction going into the channel storage.
+minDF 	>>>	 min (measured) debris-flow volume (water + sediment) [m3]
+rho_b 	>>>  bedrock density [kg/m3]
+rho_dry 	>>>  density of stored sediments, dry unit weight (sediment and air) [kg/m3], e.g. 2000 means porosity of 23%
+rho_bulk 	>>>  density of debris flows (sediment and water) [kg/m3], i.e. porosity of 38%
+shcap 	>>>  hypothetical threshold [m3] for collapse of hillslope storage, considered density is 'rho_dry'
+ls_xmin 	>>>  Minimum landslide volume from the power-law tail
+ls_alpha 	>>>  Power law scaling exponent in landslide distribution
+ls_cutoff 	>>>  The maximum potential landslide volume (m^3)
+M 	>>>  number of stochastic simulations for hillslope module
