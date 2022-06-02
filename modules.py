@@ -982,10 +982,10 @@ def sedcas(Lls, Sls, hyd, qdf, smax, rhc, shcap, area, method, LStrig, Tpr, shin
         
         Sls.index = dates
         Sls = Sls.resample(freq).pad()
-        if 'datetime' in Sls.index.dtype_str:
+        if 'datetime' in str(Sls.index.dtype):
             cond = Sls.index.time == pd.to_datetime('12:00').time()     # hillslope failure always happen at noon
             Sls[~cond] = 0                                              # set the other hours to 0
-        elif 'timedelta' in Sls.index.dtype_str:
+        elif 'timedelta' in str(Sls.index.dtype):
             cond1 = Sls.index.astype('timedelta64[h]').astype('int64') % 12 == 0
             cond2 = Sls.index.astype('timedelta64[h]').astype('int64')/12 % 2 == 1
             Sls[~(cond1 & cond2)] = 0

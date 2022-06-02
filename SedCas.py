@@ -136,6 +136,7 @@ class SedCas():
         for q in quants:
             c = 'Q%i'%q
             sedout[c] = np.percentile(self.sed.so, q, axis=1)
+        sedout['Qstl'] = self.sed.sopot
         sedout.to_csv('Sediment.out', header=True)
         
     def plot_sedyield_monthly(self, save=True):
