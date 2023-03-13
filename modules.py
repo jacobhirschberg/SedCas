@@ -3,7 +3,7 @@
 """
 Created on Thu Feb  3 16:07:40 2022
 
-@author: hirschbe
+@author: Jacob Hirschberg
 """
 
 import pandas as pd

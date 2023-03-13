@@ -4,7 +4,7 @@ Source code for SedCas. For a detailed model description, please see Hirschberg 
 
 ## How to install and run
 
-Pyhton has to be installed to run the codes. To make sure it works correctly, it is easiest to install Anaconda and create an environment with the right packages from the `.yml` file. To this end, in a command-line interpreter, change the working directory to where you saved this project and run the following:
+Pyhton has to be installed to run the codes. To make sure it works correctly, it is easiest to install Anaconda and create an environment with the right packages from the `.yml` file (use `sedcas_win.yml` for Windows OS). To this end, in a command-line interpreter, change the working directory to where you saved this project and run the following:
 
 `$ conda env create -f sedcas.yml`
 
@@ -25,11 +25,17 @@ If you want to modify the model or adapt it to your case, there are the followin
 
 ## Related publications
 
-Hirschberg, J., McArdell, B. W., Bennett, G. L., Molnar, P. (2022). Numerical Investigation of Sediment Yield Underestimation in Supply-Limited Mountain Basins with Short Records. Geophysical Research Letters, in review.
+Hirschberg, J., McArdell, B. W., Bennett, G. L., & Molnar, P. (2022). Numerical investigation of sediment-yield underestimation in supply-limited mountain basins with short records. Geophysical Research Letters, 49, e2021GL096440. https://doi.org/10.1029/2021GL096440
 
 Hirschberg, J., Fatichi, S., Bennett, G. L., McArdell, B. W., Peleg, N., Lane, S. N., Schlunegger, F., Molnar, P. (2021). Climate Change Impacts on Sediment Yield and Debris-Flow Activity in an Alpine Catchment. Journal of Geophysical Research: Earth Surface, 126, e2020JF005739. https://doi.org/10.1029/2020JF005739
 
-Bennett, G. L., P. Molnar, B. W. McArdell, and P. Burlando (2014), A probabilistic sediment cascade model of sediment transfer in the Illgraben, Water Resour. Res., 50, 1225– 1244, https://doi.org/10.1002/2013WR013806.
+Bennett, G. L., P. Molnar, B. W. McArdell, and P. Burlando (2014), A probabilistic sediment cascade model of sediment transfer in the Illgraben, Water Resour. Res., 50, 1225– 1244, https://doi.org/10.1002/2013WR013806
+
+## Related datasets
+
+Hirschberg, J.; McArdell, B. W.; Bennett, G. L.; Molnar, P. Data for Numerical Investigation of Sediment Yield Underestimation in Supply-Limited Mountain Basins with Short Records. EnviDat 2022, https://www.doi.org/10.16904/envidat.303
+
+McArdell, B. W.; Hirschberg, J. Debris-flow volumes at the Illgraben 2000-2017. EnviDat 2020, https://www.doi.org/10.16904/envidat.173
 
 ## License
 GNU General Public License v3.0
